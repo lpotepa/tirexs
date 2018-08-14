@@ -257,7 +257,7 @@ defmodule Tirexs.Query do
   @doc false
   def mlt(options) do
     [value, fields, options] = extract_options(options)
-    [more_like_this: [like_text: value, fields: fields] ++ options]
+    [more_like_this: [like: value, fields: fields] ++ options]
   end
 
   @doc false
