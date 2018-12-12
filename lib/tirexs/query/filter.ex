@@ -93,7 +93,7 @@ defmodule Tirexs.Query.Filter do
   @doc false
   def script(options) do
     [script, params, _] = extract_options(options)
-    [script: [script: script, params: params]]
+    [script: [script: script]]
   end
 
   @doc false
